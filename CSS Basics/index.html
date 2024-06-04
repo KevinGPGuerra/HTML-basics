@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Aulas de CSS</title>
+</head>
+<body>
+    <h1 id="titulo"> CSS (Cascading style sheet) </h1>
+
+    <h3>Ordem</h3>
+        <p>Cascading style sheet é o significado de CSS, e na pratica esse nome tambem 
+            faz sentido porque a estilizacao feita pelo CSS é de cima para baixo, como em uma cascata, logo se for
+            feita uma estilizacao na parte de cima do codigo para um paragrafo sem identificaçao e fizer outra estilizacao
+            pra paragrafo mais pra baixo do codigo a de baixo é a que vai fica visivel para
+            o usuario.</p>    
+
+    <h3>Seletores CSS</h3>
+
+        <p>Seletores sao as formas utilizadas pelo CSS para estilizar o HTML.<br>
+            Exemplos:<br>
+            o asteristo (*) é usado para estilizar TUDO no seu HTML entao normalmente é
+            utilizado para estilizaçao geral, como fonte da letras e etc.<br>
+            EX: * { <br>font-family: "Roboto", sans-serif;<br>
+            background: gainsboro;<br> }</p>
+
+            <p>o hashtag ou jogo da velha (#) é usado para estilizar ID's que foram colocados
+                no HTML.<br> 
+                EX: #titulo { <br>color: rgb(255,69,00);<br> }</p>
+
+                <p>o ponto (.) é usado para estilizar as classes que foram utilizada no HTML.<br>
+                    EX: .botao, button {<br> color:#DD5500;<br>
+                        background-color: lightgrey;<br>
+                        border-color: rgb(128,128,128); <br>}</p>
+
+                    <p> Caso queira colocar um estilo para mais de uma coisa mas sem utilizar 
+                        o asterisco, pode colocar a virgula (,) e outro elemento q quer estilizar.<br>
+                        EX: .botao, button {<br> color:#DD5500;<br>
+                             background-color: lightgrey;<br>
+                             border-color: rgb(128,128,128); <br>}</p>
+
+                        <p> Para estilizar as TAGS sem nenhuma separaçao como a TAG < p > por exemplo 
+                            basta colocar a TAG, e sera feita a estilizacao para todas as TAGS < p > 
+                            que tem no seu HTML.<br>
+                            EX: p { <br>color:orchid; <br>}</p>
+
+        <button class="botao"> Clica em MIM, Por favor!</button>
+    
+        <button > Clica em MIM, Vai logo mano!</button>
+
+    <h3>Cores no CSS</h3>
+
+        <p>Existem 3 formas de colocar cores no CSS, 2 as mais utilizadas 
+            sao RGB e HEXADECIMAL, e a ultima escrevendo o nome do tom de cor desejado.<br> 
+                
+            <br>RGB = RED, GREEN, BLUE.<br> 
+            <br>Os valores do RGB vao de 0 a 255, e se pode utilizar combinaçoes desses valores 
+            para fazer as cores desejadas. <br>
+            Exemplo: rgb(255,120,00);<br>
+            
+            <br>Os valores em HEXADECIMAL sao combinados e utilizados para criar as cores.    
+            <br>curiosidade sobre os valores: DECIMAL(10) = 0,1,2,3,4,5,6,7,8,9. | HEXADECIMAL(16) = 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F. <br>
+            <br>Exemplo: #FF5500; 
+            Para fazer o codigo da cor em HEXADECIMAL é utilizado o "#" e apos ele 6 digitos
+            sendo os 2 primeiros o RED, os 2 do meio o GREEN, e os 2 ultimos o BLUE.
+            
+            As cores escritas basta escrever o nome da cor desejada dentro das opçoes 
+            disponiveis.
+            Exemplo: color:orangered;</p>
+        
+    <h3>Unidades de medida</h3>
+
+        <p><strong>ABSOLUTAS:</strong><br>
+            <br><strong>px (pixels)</strong> praticamente a unica unidade de medida absoluta usada é pixel mas tambem existem outras como,
+            <br><strong>in (inches/polegadas)</strong> 
+            <br><strong>cm/mm (centímetro / milímetro)</strong>.</p>
+
+        <p><strong>RELATIVAS:</strong><br>
+            <br><strong>%</strong> calcula o tamanho relativo ao elemento pai<br>
+            <strong>vw (view width)</strong> 1vw é 1% da largura da janela do navegador<br>
+            <strong>vh (view height)</strong> 1vh é 1% da altura da janela do navegador<br>
+            <strong>em (emphemeral unit / unidade transitoria)</strong> é uma unidade relativa ao elemento pai<br>
+            <strong>rem (root emphemeral unit / unidade transitorai raiz)</strong> é uma unidade relativa ao elemento raiz<br>
+            Medidas muito usada em projetos responsivos, 
+            que sao usados em pc, celulares, tablets e etc.</p>     
+
+    <h3>Estilização de textos</h3>
+        
+        <p> 
+            <br>Para mudar a fonte da letra é preciso importar a fonte de algum site e colocar no head html ou 
+            importar direto para o CSS.<br>
+            <br>Exemplo importanto para o head do HTLM:
+            <br>< link rel="preconnect" href="https://fonts.googleapis.com">
+            <br>< link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <br>< link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><br> 
+            <br>Exemplo importando direto pro CSS:<br>
+            <br>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+            <br>font-family: 'Roboto', sans-serif;     (muda a fonte das letras)
+           
+
+            <ul>
+                <li>font-size:20px;  (aumenta tamanho da fonte)</li>
+                <li>font-weight:200; (determina grossura da fonte) (pode utilizar numero ou 
+                    determinar uma grossura pre configurada com um nome por exemplo: bold, bolder)</li>
+                <li>font-style: italic; (muda a fonte pra italico por exemplo)</li>
+                <li>line-height:50px; (tamanho da linha)</li>
+                <li>letter-spacing: 10px; (espaço entre as letras)</li>
+                <li>word-spacing: 40px; (espaço entre as palavras)</li>
+                <li>text-align: justify; (formata o texto, centralizado, justificado, a esquerda etc.)</li>
+                <li>text-transform: capitalize; (altera as letras entre maiusculas, minusculas, somente as primeiras letras de cada palavra maiusculas etc)</li>
+                <li>text-decoration: underline; (faz modificaçoes como sublinhar o texto por exemplo)</li>
+                <li>text-shadow: 10px 10px 10px #FF5500;  ( coloca um efeito de sombra no texto, cada propriedade alterada faz uma alteraçao.)<br>
+                    <ol><li>Primeira a movimentaçao na horizontal da sombra.</li>
+                        <li>Segundo a movimentaçao na vertical da sombra.</li>
+                        <li>Terceira o nivel de claraza/esfumaçado da sombra.</li>
+                        <li>Quarta a cor da sombra/esfumaçado.</li>
+                </ol></li>             
+            </ul> 
+        </p>
+        
+    <h3> BOX SIZING</h3>
+        <div class="box box-1">
+            Div - 1
+        </div>
+            <p>Border box - limita o tamanho da div em que esta trabalhando de acordo com o height e width que foi aplicado,
+                qualquer adiçao de padding ou margin, vai ficar dentro do limite definido pelo height e width. </p> <br>
+                <p>Content box - vai ser expandir de acordo com as configuraçoes que forem colocadas sem limite como na border box, 
+                    os valores de height, width, padding e margin vao se somando e vc fica com o total.</p>
+
+    <h3> DISPLAY </h3>
+        <div class="box box-2"> Div - 2 - Block</div>
+        <div class="box box-3"> Div - 3 Inline</div>
+        <div class="box box-4"> Div - 4 Inline-block</div> 
+            <p>Block <br> Vem como padrão nas seguintes tags: div, section, p, h1, h2, ul, li, article..</p>
+                <ol>
+                    <li>Ocupa 100% da largura do elemento pai.</li>
+                    <li>Sempre ocupa toda sua linha.</li>
+                    <li>Altura definida de acordo com conteúdo.</li>
+                    <li>Podemos definer height e width.</li>
+                    <li>Podemos definir valores de margin top e bottom.</li>
+                </ol>
+                <p>Inline <br> Vem como padrão nas seguintes tags: a, span, b, i ...</p>
+                <ol>
+                    <li>Elementos em linha.</li>
+                    <li>Não permite alterar height e width.</li>
+                    <li>Não Podemos definir valores de margin top e bottom.</li>
+                    <li>Ganha comportamento de uma palavra.</li>
+                </ol>
+                <p>Inline-Block</p>
+                <ol>
+                    <li>Elementos em linha, porém com características de display block.</li>
+                    <li>Altura e largura podem ser alteradas.</li>
+                </ol>
+
+</body>
+</html>
+

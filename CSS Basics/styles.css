@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background: white;
+}
+
+#titulo {
+    color: rgb(255,140,00);
+    text-align: center;
+    text-shadow: 4px 1px 4px black;
+    
+}
+
+h3 {
+    font-size: 22px;
+    text-shadow: 4px 1px 4px black;
+    color: darkorange;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+
+p {
+    color: #222222;
+    margin: 20px;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+.botao, button {
+    color:#DD5500;
+    background-color: lightgrey;
+    border-color: rgb(128,128,128);
+    margin: 30px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin:20px;
+
+}
+
+.box-1 {
+    background: aquamarine;
+    display: inline-block;
+}
+
+.box-2 {
+    background: greenyellow;
+    display: block;
+}
+
+.box-3 {
+    background: yellow;
+    display: inline;
+}
+
+.box-4 {
+    background: palevioletred;
+    display: inline-block;
+}
